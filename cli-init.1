@@ -1,0 +1,49 @@
+.\" generated with Ronn/v0.7.3
+.\" http://github.com/rtomayko/ronn/tree/0.7.3
+.
+.TH "CLI\-INIT" "1" "August 2014" "" ""
+.
+.SH "NAME"
+\fBcli\-init\fR \- The easy way to start building Golang command\-line application
+.
+.SH "SYNOPSIS"
+\fBcli\-init\fR \fIoptions\fR \fIname\fR
+.
+.br
+.
+.SH "DESCRIPTION"
+\fBcli\-init\fR is the easy way to start building Golang command\-line application with codegangsta/cli\. All you need to do is to set application name and its subcommand\. cli\-init generates its templates (scaffold) which you need to write when using codegangsta/cli\. You can focus on core functionality of application\.
+.
+.SH "OPTIONS"
+.
+.TP
+\fB\-s\fR, \fB\-\-subcommands\fR
+Set Conma\-seplated list of sub\-commands to build\.
+.
+.TP
+\fB\-\-debug\fR
+Run as DEBUG mode\. Prompt concreate outputs\.
+.
+.TP
+\fB\-h\fR, \fB\-\-help\fR
+Show simple usage message and exit\.
+.
+.TP
+\fB\-v\fR, \fB\-\-version\fR
+Show cli\-init version and exit\.
+.
+.SH "EXAMPLES"
+Build todo application which has subcommands add, list, delete:
+.
+.IP "" 4
+.
+.nf
+
+$ cli\-init \-s add,list,delete todo
+.
+.fi
+.
+.IP "" 0
+.
+.SH "COPYRIGHT"
+cli\-init is Copyright (C) 2014 Taichi Nakashima \fIhttps://github\.com/tcnksm\fR
